@@ -9,19 +9,29 @@ All current API documentation is now at [prisma.pan.dev](https://prisma.pan.dev/
 There might be more pillars in the future, and this will be updated accordingly. 
 
 ## To use these Collections and Environment, there are a few setup pieces before you can get started in Postman:
-1. [You will need to import multiple files into Postman](https://learning.postman.com/docs/getting-started/importing-and-exporting-data/)
+
+### Collections
+1. You will need to [import multiple files into](https://learning.postman.com/docs/getting-started/importing-and-exporting-data/) Postman
 
 * For the CSPM APIs, there are currently multiple files to import, hosted in the **_cspm_** folder of [THIS GitHub folder](https://github.com/PaloAltoNetworks/prisma.pan.dev/tree/master/static/oas) (which is what the main [prisma.pan.dev](https://prisma.pan.dev/) site is based on)
 
-You will want to import all 30+ **.yaml** files into Postman. 
+   * You will want to import all 30+ **.yaml** files into Postman. 
 
-* For the Compute (CWP) APIs, starting with Compute release `21.04`, the OpenAPI Spec file can be downloaded directly from the Console. (You can also download the individual files at the same link as above CSPM, just in the **_cwpp_** folder)
+* For the Compute (CWP) APIs, starting with Compute release `21.04`, the OpenAPI Spec file can be downloaded directly from the Console. (You can also download the individual files at the same [link](https://github.com/PaloAltoNetworks/prisma.pan.dev/tree/master/static/oas) as above, just in the **_cwpp_** folder)
 
-Navigate to **_Compute > Manage > System > Utilities > OpenAPI Spec (Beta)_**, and import this one file into Postman. 
+   * Navigate and download the file at: **_Compute > Manage > System > Utilities > OpenAPI Spec (Beta)_**, and import this into Postman. 
 
 
-1. Set some [Postman Environment variables](https://learning.postman.com/docs/sending-requests/variables/). You will need to set:
-    1. api-endpoint
+### Environment
+1. The only 2 files you will need to import from this repo are the Prisma Cloud environments:
+* [CSPM](CSPM_Prisma_Cloud.postman_environment.json)
+* [CWP](CWP_Prisma_Cloud.postman_environment.json)
+
+You just need to remember to switch between the CSPM and CWP environments depending on what API you are currenlty calling. 
+
+
+1. After importing, we need to set some [Postman Environment variables](https://learning.postman.com/docs/sending-requests/variables/). You will need to configure:
+    1. baseUrl
     1. compute-api-endpoint
     1. ACCESS_KEY
     1. SECRET_KEY
