@@ -13,19 +13,23 @@ There might be more pillars in the future, and this will be updated accordingly.
 ### Collections
 1. You will need to [import multiple files into](https://learning.postman.com/docs/getting-started/importing-and-exporting-data/) Postman
 
-* For the CSPM APIs, there are currently multiple files to import, hosted in the **_cspm_** folder of [THIS GitHub folder](https://github.com/PaloAltoNetworks/prisma.pan.dev/tree/master/static/oas) (which is what the main [prisma.pan.dev](https://prisma.pan.dev/) site is based on)
+* For the CSPM APIs, there are currently multiple files to import, hosted in the **_cspm_** folder of [this GitHub folder](https://github.com/PaloAltoNetworks/prisma.pan.dev/tree/master/static/oas) (which is what the main [prisma.pan.dev](https://prisma.pan.dev/) site is based on)
 
-   * You will want to import all 30+ **.yaml** files into Postman. 
+   * You will want to import all 30 (or more) **.yaml** files into Postman. **Don't** include the `sidebar.js` or the `dist` folder.
+
+![1](./Images/cspm_import.png)
 
 * For the Compute (CWP) APIs, starting with Compute release `21.04`, the OpenAPI Spec file can be downloaded directly from the Console. (You can also download the individual files at the same [link](https://github.com/PaloAltoNetworks/prisma.pan.dev/tree/master/static/oas) as above, just in the **_cwpp_** folder)
 
    * Navigate and download the file at: **_Compute > Manage > System > Utilities > OpenAPI Spec (Beta)_**, and import this into Postman. 
+
 ![1](./Images/compute_import.png)
 
 ### Environment
 1. The only 2 files you will need to import from this repo are the Prisma Cloud environments:
-* [CSPM](CSPM_Prisma_Cloud.postman_environment.json)
-* [CWP](CWP_Prisma_Cloud.postman_environment.json)
+* [CSPM_Prisma_Cloud.postman_environment.json](CSPM_Prisma_Cloud.postman_environment.json)
+* [CWP_Prisma_Cloud.postman_environment.json](CWP_Prisma_Cloud.postman_environment.json)
+
 ![1](./Images/env_import.png)
 
 
