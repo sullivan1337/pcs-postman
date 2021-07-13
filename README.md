@@ -1,24 +1,28 @@
 # Instructions on how to setup the Postman Collections and Environments relating to Prisma Cloud (including Compute Console) API requests
 
+There are 2 main _pillars_ of Prisma Cloud APIs today, and this will cover both of them. 
+* Cloud Security Posture Management (CSPM)
+* Cloud Workload Protection (CWP)
+
+All current API documentation is now at [prisma.pan.dev](https://prisma.pan.dev/)
+There might be more in the future, and this will be updated accordingly. 
+
+---
+**NOTE**
+
+For Cloud Workload Protection (CWP) APIs, starting with Compute release 21.04, the OpenAPI Spec file can be downloaded directly from the Console. 
+Navigate to *Compute > Manage > System > Utilities > OpenAPI Spec (Beta)*
+
+---
+
 To use these Collections and Environment, there are a few setup pieces after importing the 3 files into Postman:
 1. [Import the 3 files](https://learning.postman.com/docs/getting-started/importing-and-exporting-data/) in root of this repo (2 Collections and 1 Environment) into Postman.
-
-![1](./Images/Import1.png)
-
-![2](./Images/Import2.png)
-
-![3](./Images/import3.png)
 
 1. Set some [Postman Environment variables](https://learning.postman.com/docs/sending-requests/variables/). You will need to set:
     1. api-endpoint
     1. compute-api-endpoint
     1. ACCESS_KEY
     1. SECRET_KEY
-![1](./Images/Env1.png)
-
-![2](./Images/Env2.png)
-
-![3](./Images/Env3.png)
 
 
 1. To get the address/URL for your Console, go to *Compute > Manage > System > Downloads*, and copy the string under **Path to Console**
